@@ -1,0 +1,89 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Searching Profile Responsive Widget Template :: w3layouts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Searching Profile Widget Tab Form,Login Forms,Sign up Forms,Registration Forms,News letter Forms,Elements"/>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+
+<body>
+	<div class="main">
+		<h1>Searching Profile Widget</h1>
+		<div class="wrapper-demo">
+				<!--start-wrapper-dropdown-2-->
+					
+					<div id="dd" class="wrapper-dropdown-2" tabindex="1"><img src="images/img1.jpg"/>
+							<ul class="dropdown">
+							
+								<li><a href="#">Edit Users<span class="icon icon0"> </span></a></li>
+								<li><a href="#">Web Statistics<span class="icon icon1"> </span></a></li>
+								<li><a href="#">Upload Settings<span class="icon icon2"> </span></a></li>
+								<li><a href="#">Edit Slider<span class="icon icon3"> </span></a></li>
+							</ul>
+					</div>
+					
+					
+					<div class="search-box">
+					    <form id="search" action="#" method="post">
+							<div id="label"><label for="search-terms" id="search-label">search</label></div>
+							<div id="input"><input type="text" name="search-terms" id="search-terms" placeholder="Enter search terms..."></div>
+						</form>
+				    </div>
+					
+					<!-- search-scripts -->
+					<script src="js/classie.js"></script>
+					<script src="js/search.js"></script>
+					<!-- //search-scripts -->
+					
+				
+		<div class="clear"></div>		
+		</div>
+			<!--end-wrapper-dropdown-2-->
+			
+			<!--start-script-->
+			<script type="text/javascript">
+							function DropDown(el) {
+								this.dd = el;
+								this.initEvents();
+							}
+							DropDown.prototype = {
+								initEvents : function() {
+									var obj = this;
+				
+									obj.dd.on('click', function(event){
+										$(this).toggleClass('active');
+										event.stopPropagation();
+									});	
+								}
+							}
+							$(function() {
+				
+								var dd = new DropDown( $('#dd') );
+				
+								$(document).click(function() {
+									// all dropdowns
+									$('.wrapper-dropdown-2').removeClass('active');
+								});
+				
+							});
+			</script>
+			<!--end-script-->
+
+	</div> <!--main End -->
+		<div class="footer">
+		<p>Copyright © 2016 Searching Profile Widget. All Rights Reserved | Design by <a href="https://w3layouts.com/" target="_blank">w3layouts</a></p>
+		</div>
+
+
+</body>
+</html>
